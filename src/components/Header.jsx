@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-3 h-16 bg-white border-b border-blue-100">
       {/* Left: Logo */}
-      <div className="text-lg font-bold text-blue-500">LOGO</div>
+      <div className="text-2xl font-bold text-blue-500">LOGO</div>
 
       {/* Right: Nav + Contact Button grouped together */}
       <div className="flex items-center gap-8">
