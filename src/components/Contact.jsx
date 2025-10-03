@@ -23,7 +23,7 @@ function Contact() {
 
       {/* Reduced width: max-w-4xl (896px) or max-w-5xl (1024px) */}
       <div className="max-w-4xl mx-auto px-4 text-center w-full">
-        <h3 className="text-xl font-bold mb-4">
+        <h3 className="text-xl font-bold mb-4 font-poppins">
           Lorem Ipsum is simply dummy <br />
           text of the printing.
         </h3>
@@ -36,7 +36,7 @@ function Contact() {
           />
           <button
             type="submit"
-            className="bg-black text-white px-9 py-2 rounded-md hover:bg-gray-800 whitespace-nowrap"
+            className="bg-black text-white px-9 py-2 rounded-md hover:bg-gray-800 whitespace-nowrap font-poppins"
           >
             SUBSCRIBE
           </button>

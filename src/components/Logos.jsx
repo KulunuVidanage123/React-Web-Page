@@ -16,7 +16,7 @@ function Logos() {
       ></div>
 
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h3 className="text-lg font-medium mb-8">You will be in good company</h3>
+        <h3 className="text-lg font-medium mb-8 font-poppins">You will be in good company</h3>
         <div className="flex flex-wrap justify-center gap-12 items-center">
           <img src={beneoshop} alt="Beneoshop" className="h-100" />
           <img src={caspio} alt="Caspio" className="h-100" />

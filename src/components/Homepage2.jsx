@@ -37,16 +37,16 @@ function Homepage2() {
               />
             </div>
             <div className="ml-3">
-              <h3 className="font-medium text-gray-900">Lorem Ipsum is simply dummy text</h3>
-              <p className="text-sm text-gray-600">Lorem Ipsum is simply dummy text</p>
+              <h3 className="font-medium text-gray-900 font-poppins">Lorem Ipsum is simply dummy text</h3>
+              <p className="text-sm text-gray-600 font-poppins">Lorem Ipsum is simply dummy text</p>
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900">
-            <span className="text-blue-500">Lorem Ipsum</span> is simply dummy <br /> text of the printing.
+          <h2 className="text-2xl font-bold text-gray-900 font-poppins">
+            <span className="text-blue-500 font-poppins">Lorem Ipsum</span> is simply dummy <br /> text of the printing.
           </h2><br></br>
 
-          <p className="text-gray-600">
+          <p className="text-gray-600 font-poppins">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
           </p>
         </div>

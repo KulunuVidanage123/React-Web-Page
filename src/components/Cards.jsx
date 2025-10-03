@@ -3,19 +3,19 @@ import bellImage from '../assets/bell.png'; // 👈 Import the bell image
 
 function Cards() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white font-poppins">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Card 1 */}
-        <div className="bg-gray-50 p-8 rounded-lg shadow-md min-h-[450px] flex flex-col justify-center max-w-[550px] mx-auto">
-          <h3 className="text-xl font-bold mb-4 text-center">
+        <div className="bg-gray-50 p-8 rounded-lg shadow-md min-h-[450px] flex flex-col justify-center max-w-[550px] mx-auto font-poppins">
+          <h3 className="text-xl font-bold mb-4 text-center font-poppins">
             Lorem Ipsum is simply <br />
             dummy text.
           </h3>
-          <p className="text-gray-600 mb-6 text-center">
+          <p className="text-gray-600 mb-6 text-center font-poppins">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
           </p>
           <div className="flex justify-center">
-            <button className="bg-blue-500 text-white px-5 py-2 rounded font-medium hover:bg-blue-600">
+            <button className="bg-blue-500 text-white px-5 py-2 rounded font-medium hover:bg-blue-600 font-poppins">
               View More
             </button>
           </div>
@@ -34,15 +34,15 @@ function Cards() {
 
           {/* Actual card content on top */}
           <div className="relative z-10 bg-blue-500 text-white p-8 rounded-lg shadow-md min-h-[450px] flex flex-col justify-center">
-            <h3 className="text-xl font-bold mb-4 text-center">
+            <h3 className="text-xl font-bold mb-4 text-center font-poppins">
               Lorem Ipsum is simply <br />
               dummy text.
             </h3>
-            <p className="mb-6 text-center">
+            <p className="mb-6 text-center font-poppins">
               KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
             </p>
             <div className="flex justify-center">
-              <button className="bg-white text-blue-500 px-5 py-2 rounded font-medium hover:bg-gray-100">
+              <button className="bg-white text-blue-500 px-5 py-2 rounded font-medium hover:bg-gray-100 font-poppins">
                 View More
               </button>
             </div>

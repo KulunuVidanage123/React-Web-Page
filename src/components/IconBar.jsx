@@ -14,7 +14,7 @@ function IconBar() {
 
   return (
     <section className="py-8 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-7">
         {/* 👇 Increased gap from gap-6 to gap-8 */}
         <div className="flex flex-col md:flex-row items-start gap-8">
           {services.map((service, index) => (
@@ -28,8 +28,8 @@ function IconBar() {
                 className="w-12 h-12 rounded-lg"
               />
               <div>
-                <h3 className="font-bold text-gray-900">{service.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{service.desc}</p>
+                <h3 className="font-bold text-gray-900 font-poppins">{service.title}</h3>
+                <p className="text-sm text-gray-600 mt-1 font-poppins">{service.desc}</p>
               </div>
             </div>
           ))}
