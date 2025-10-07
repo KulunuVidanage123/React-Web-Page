@@ -26,17 +26,17 @@ function Contact() {
         <h3 className="text-xl font-bold mb-4 font-poppins">
           Lorem Ipsum is simply dummy <br />
           text of the printing.
-        </h3>
+        </h3><br></br>
         <form className="flex flex-col sm:flex-row gap-3 mt-8 justify-center items-center">
 
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-full sm:w-auto max-w-[800px] px-40 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 text-left"
+            className="w-full sm:w-auto max-w-[800px] px-40 py-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 text-left"
           />
           <button
             type="submit"
-            className="bg-black text-white px-9 py-2 rounded-md hover:bg-gray-800 whitespace-nowrap font-poppins"
+            className="bg-black text-white px-9 py-4 rounded-md hover:bg-gray-800 whitespace-nowrap font-poppins text-sm"
           >
             SUBSCRIBE
           </button>

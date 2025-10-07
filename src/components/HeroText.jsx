@@ -4,6 +4,7 @@ import React from 'react';
 function HeroText() {
   return (
     <section className="py-6 md:py-8">
+    <section id="herotext-section" className="..."></section>
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h1 className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed font-poppins">
           Lorem Ipsum is simply dummy text of the printing.<br />
@@ -13,6 +14,7 @@ function HeroText() {
                 Lorem Ipsum has been the industry's
         </p>
       </div>
+
     </section>
   );
 }

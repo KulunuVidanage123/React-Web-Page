@@ -5,6 +5,7 @@ import icon5 from '../assets/icon5.png';
 function Homepage() {
   return (
     <section className="py-16 bg-white relative">
+    <section id="homepage-section" className="..."></section>
       {/* Half-Circle Gradient — Center-Right Corner, Facing LEFT, Transparent, Larger */}
       <div
         className="absolute right-0 top-1/2 -translate-y-[50%] w-[450px] h-[450px] bg-gradient-to-br from-blue-50 to-blue-100 rounded-full z-10 opacity-30"
