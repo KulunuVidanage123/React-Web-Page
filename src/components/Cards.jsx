@@ -1,62 +1,63 @@
-import React from 'react';
-import bellImage from '../assets/bell.png'; // 👈 Import the bell image
+import React from "react";
+import bellImage from "../assets/bell.png";
+import Pink from "../assets/pink.png";
 
 function Cards() {
   return (
-    <section className="py-16 bg-white font-poppins">
-    <section id="cards-section" className="..."></section>
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section id="cards-section" className="py-16 bg-white font-poppins">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-12">
         {/* Card 1 */}
-        <div className="bg-gray-50 p-8 rounded-lg shadow-md min-h-[450px] flex flex-col justify-center max-w-[550px] mx-auto font-poppins">
-          <h3 className="text-xl font-bold mb-4 text-center font-poppins">
-            Lorem Ipsum is simply <br />
-            dummy text.
-          </h3><br></br>
-          <p className="text-gray-600 mb-6 text-center font-poppins">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
-          </p><br></br>
-          <div className="flex justify-center">
-            <button className="bg-blue-500 text-white px-5 py-2 rounded font-medium hover:bg-blue-600 font-poppins">
+        <div className="relative flex justify-center">
+          <div className="relative z-10 bg-gray-50 p-6 sm:p-8 rounded-xl shadow-md w-[572px] h-[459px] flex flex-col justify-center items-center text-center transition-all duration-300 hover:shadow-lg">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
+              Lorem Ipsum is simply <br className="hidden sm:block" />
+              dummy text.
+            </h3><br></br>
+            <p className="text-gray-600 mb-10 text-sm sm:text-base leading-relaxed max-w-[90%] mx-auto">
+              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+              application and website builders measuring dozens of completed
+              projects. We build and develop mobile applications for several top
+              platforms, including Android & iOS.
+            </p><br></br>
+            <button className="bg-[#1090CB] text-white w-[153px] h-[49px] rounded-lg font-medium hover:bg-[#0d7ab3] transition-all font-poppins">
               View More
             </button>
           </div>
         </div>
 
-        {/* Card 2 — wrapped in relative container for background circle + bell */}
-        <div className="relative max-w-[550px] mx-auto">
-          {/* Gradient light pink circle in bottom-right */}
-          <div
-            className="absolute bottom-1/2 right-16 transform translate-y-[90%] translate-x-1/2 w-[400px] h-[400px] rounded-full opacity-30"
-            style={{
-              background: 'radial-gradient(circle, #fce7f3, #fbcfe8, #f12d99ff)', // light pink gradient
-              zIndex: 1,
-            }}
-          ></div>
+        {/* Card 2 — with Pink background and bell image */}
+        <div className="relative flex justify-center">
+          <img
+            src={Pink}
+            alt="Pink decorative background"
+            className="absolute bottom-1/2 right-1/6 translate-x-1/2 translate-y-[90%] w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] opacity-70 z-[1]"
+          />
 
-          {/* Actual card content on top */}
-          <div className="relative z-10 bg-blue-500 text-white p-8 rounded-lg shadow-md min-h-[450px] flex flex-col justify-center">
-            <h3 className="text-xl font-bold mb-4 text-center font-poppins">
-              Lorem Ipsum is simply <br />
+          {/* Card content */}
+          <div className="relative z-10 bg-[#1090CB] text-white p-6 sm:p-8 rounded-xl shadow-md w-[572px] h-[459px] flex flex-col justify-center items-center text-center transition-all duration-300 hover:shadow-lg">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
+              Lorem Ipsum is simply <br className="hidden sm:block" />
               dummy text.
             </h3><br></br>
-            <p className="mb-6 text-center font-poppins">
-              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
+            <p className="mb-10 text-sm sm:text-base leading-relaxed max-w-[90%] mx-auto">
+              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+              application and website builders measuring dozens of completed
+              projects. We build and develop mobile applications for several top
+              platforms, including Android & iOS.
             </p><br></br>
-            <div className="flex justify-center">
-              <button className="bg-white text-blue-500 px-5 py-2 rounded font-medium hover:bg-gray-100 font-poppins">
-                View More
-              </button>
-            </div>
+            <button 
+              className="bg-white text-[#1090CB] w-[153px] h-[49px] rounded-lg font-medium hover:bg-gray-100 transition-all font-poppins"
+            >
+              View More
+            </button>
           </div>
 
-          {/* Bell Image — positioned at top-right corner of card, floating above */}
-          
+          {/* Bell image — floating and responsive */}
           <img
             src={bellImage}
             alt="Bell notification icon"
-            className="absolute top-[-15%] right-0 w-18 h-18 -translate-y-2 translate-x-2 z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
+            className="absolute top-[-10%] right-[5%] w-[50px] sm:w-[60px] md:w-[120px] h-auto z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
           />
-
         </div>
       </div>
     </section>

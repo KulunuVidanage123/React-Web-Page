@@ -4,39 +4,37 @@ import pieImage from '../assets/PChart.png';
 
 function Contact() {
   return (
-    <section className="min-h-[400px] bg-blue-50 relative flex items-center">
-      {/* Star Image — top-left, floating */}
+    <section className="min-h-[500px] max-w- [1440px] bg-[#E8F4FA] relative flex items-center overflow-hidden px-4 py-12">
+      {/* Decorative Images */}
       <img
         src={starImage}
         alt="Star icon"
-        className="absolute top-[-10%] left-1/4 w-18 h-18 -translate-x-1/2 -translate-y-2 z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
-        
+        className="absolute top-0 left-[30%] w-10 sm:w-14 md:w-20 animate-bounce hover:scale-110 transition-transform duration-300"
       />
 
       <img
         src={pieImage}
         alt="Pie icon"
-        className="absolute top-[20%] right-1/3 w-18 h-18 -translate-x-1/2 -translate-y-2 z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
-        
+        className="absolute top-[25%] right-[35%] w-5 sm:w-5 md:w-10 animate-bounce hover:scale-110 transition-transform duration-300"
       />
 
-
-      {/* Reduced width: max-w-4xl (896px) or max-w-5xl (1024px) */}
-      <div className="max-w-4xl mx-auto px-4 text-center w-full">
-        <h3 className="text-xl font-bold mb-4 font-poppins">
-          Lorem Ipsum is simply dummy <br />
+      {/* Content */}
+      <div className="max-w-3xl mx-auto text-center w-full">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 font-poppins leading-relaxed text-gray-800">
+          Lorem Ipsum is simply dummy <br className="hidden sm:block" />
           text of the printing.
         </h3><br></br>
-        <form className="flex flex-col sm:flex-row gap-3 mt-8 justify-center items-center">
 
+        {/* Form */}
+        <form className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center px-2">
           <input
             type="email"
-            placeholder="Enter your email"
-            className="w-full sm:w-auto max-w-[800px] px-40 py-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 text-left"
+            placeholder="        Enter your email"
+            className="w-full sm:flex-1 w-[532px] h-[67px] border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm sm:text-base font-poppins placeholder:text-gray-400"
           />
           <button
             type="submit"
-            className="bg-black text-white px-9 py-4 rounded-md hover:bg-gray-800 whitespace-nowrap font-poppins text-sm"
+            className="bg-black text-white w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
           >
             SUBSCRIBE
           </button>

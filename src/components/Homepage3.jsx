@@ -1,53 +1,59 @@
 import React from 'react';
-import vrImage from '../assets/VRHeadset.png'; 
-import icon5 from '../assets/icon7.png';
+import vrImage from '../assets/VRHeadset.png';
+import icon7 from '../assets/icon7.png';
 
 function Homepage3() {
+
+  const contentBlock = {
+    img: icon7,
+    title: 'Lorem Ipsum is simply dummy text',
+    desc: 'Lorem Ipsum is simply dummy text',
+  };
+
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        {/* Left: Text Content */}
-        <div className="flex-1 max-w-lg space-y-6">
-          <div className="flex items-start gap-3">
-            <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center overflow-hidden">
+   
+    <section id="homepage3-section" className="py-8 sm:py-12 md:py-16 bg-white overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-8 sm:px-12 md:px-20 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+        
+        {/* Left: Text Section */}
+        <div className="flex-1 w-full max-w-2xl space-y-6 md:space-y-8 text-center md:text-left">
+          
+         
+          <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 mb-4">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-500 rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src={icon5}
-                alt="Icon 5"
+                src={contentBlock.img}
+                alt={contentBlock.title}
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
-              <h3 className="font-medium text-gray-900 font-poppins">Lorem Ipsum is simply dummy text</h3>
-              <p className="text-sm text-gray-600 font-poppins">Lorem Ipsum is simply dummy text</p>
-            </div><br></br>
+              <h3 className="font-medium text-gray-900 font-poppins text-sm sm:text-base">
+                {contentBlock.title}
+              </h3>
+              <p className="text-xs sm:text-sm text-gray-600 font-poppins">
+                {contentBlock.desc}
+              </p>
+            </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 font-poppins">
-            <span className="text-blue-500 font-poppins">Lorem Ipsum</span> is simply dummy <br /> text of the printing.
-          </h2><br></br>
+          {/* Heading */}
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 font-poppins">
+            <span className="text-[#1090CB] font-poppins">Lorem Ipsum</span> is simply dummy <br className="hidden md:block" /> text of the printing.
+          </h2>
 
-          <p className="text-gray-600 font-poppins">
+          {/* Paragraph */}
+          <p className="text-sm sm:text-base text-gray-600 font-poppins">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & iOS.
           </p>
         </div>
 
-        {/* Right: VR Image with Gradient Circle */}
-        <div className="flex-shrink-0 relative"> {/* ✅ relative container for absolute positioning */}
-          {/* Gradient light purple circle — middle right */}
-
-          <div
-            className="absolute top-1/2 right-16 transform translate-y-[-40%] translate-x-1/2 w-[400px] h-[400px] rounded-full opacity-30"
-            style={{
-              background: 'radial-gradient(circle, #ede9fe, #ddd6fe, #c4b5fd)',
-              zIndex: 1,
-            }}
-          ></div>
-
-          {/* Image on top */}
+        {/* Right: VR Image */}
+        <div className="flex-shrink-0 w-full md:w-auto md:ml-auto flex justify-center">
           <img
             src={vrImage}
-            alt="VRHeadset mockup"
-            className="relative z-10 w-[500px] h-[400px] rounded-xl object-contain"
+            alt="VR Headset mockup"
+            className="w-full max-w-[350px] sm:max-w-[650px] md:w-[700px] h-auto md:h-[500px] rounded-xl object-contain"
           />
         </div>
       </div>
