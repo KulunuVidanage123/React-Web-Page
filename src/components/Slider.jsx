@@ -66,7 +66,7 @@ function Slider() {
                   top-[550px]       /* md screens */
                   lg:top-[800px]    /* adjusted for laptop screens like 1920x1080 */
                   xl:top-[520px]    /* slightly lower on larger desktops, but still higher than before */
-                  2xl:top-[700px]   /* very large screens */
+                  2xl:top-[85%]   /* very large screens */
                   ">
         <img
           src={figure2}
