@@ -65,7 +65,7 @@ function Header() {
 
   return (
     <>
-      {/* GLOBAL FIX for iOS layout shifts */}
+      
       <style>{`
         html, body {
           overflow-x: hidden !important;
@@ -84,7 +84,7 @@ function Header() {
         ></div>
       )}
 
-      {/* Wrapper to prevent right-side gap but allow dropdown to show */}
+    
       <div className="overflow-x-hidden max-w-full">
         <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-blue-100 w-screen max-w-full overflow-visible">
           <div className="max-w-[1600px] w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-8 h-16 relative">
