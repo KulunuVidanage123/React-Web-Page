@@ -56,7 +56,7 @@ function Header() {
     const baseClasses =
       "text-sm sm:text-base font-medium relative cursor-pointer font-poppins transition-colors duration-200";
     const activeClasses =
-      "text-[#1090CB] after:content-[''] after:absolute after:top-[-8px] after:left-1/2 after:-translate-x-5 after:w-2 after:h-2 after:bg-green-500 after:rounded-full";
+      "text-[#1090CB] after:content-[''] after:absolute after:top-[-8px] after:left-3 after:-translate-x-5 after:w-2 after:h-2 after:bg-green-500 after:rounded-full";
     const inactiveClasses = "text-gray-700 hover:text-[#1090CB]";
     return `${baseClasses} ${
       activeTab === tabName ? activeClasses : inactiveClasses
@@ -155,10 +155,13 @@ function Header() {
 
               <a
                 href="#"
-                className="text-sm font-medium text-white bg-[#1090CB] px-6 sm:px-9 py-2.5 rounded-lg hover:bg-[#0e7db6] font-poppins transition-colors duration-200 w-full md:w-auto text-center md:ml-12 w-[125px] h-[41px]"
+                className="text-sm font-medium text-white bg-[#1090CB] px-6 sm:px-9 py-2.5 rounded-lg hover:bg-[#0e7db6] font-poppins transition-colors duration-200 w-[130px] sm:w-[150px] md:w-auto text-center md:ml-12 h-[41px] whitespace-nowrap"
               >
                 Contact us
               </a>
+
+
+
             </div>
           </div>
         </header>

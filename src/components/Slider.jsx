@@ -40,7 +40,7 @@ function Slider() {
         {/* Right: Image Section */}
         <div className="flex-shrink-0 relative order-1 lg:order-2 flex justify-end w-full md:w-auto -mt-28">
           <div className="relative">
-            {/* Yellow Transparent Gradient Patch */}
+            
             <div className="absolute top-[15%] right-[10%] w-[450px] h-[450px] rounded-full bg-gradient-to-br from-[#FFF9C4]/60 to-transparent blur-2xl z-[8]" />
               
             <img

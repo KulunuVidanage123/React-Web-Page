@@ -24,8 +24,7 @@ function Cards() {
             </button>
           </div>
         </div>
-
-        {/* Card 2 — with Pink background and bell image */}
+        
         <div className="relative flex justify-center">
           <img
             src={Pink}
@@ -52,12 +51,13 @@ function Cards() {
             </button>
           </div>
 
-          {/* Bell image — floating and responsive */}
+          {/* Bell image */}
           <img
             src={bellImage}
             alt="Bell notification icon"
-            className="absolute top-[-10%] right-[5%] w-[50px] sm:w-[60px] md:w-[120px] h-auto z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
+            className="absolute top-[-4%] sm:top-[-10%] right-[5%] w-[50px] sm:w-[60px] md:w-[120px] h-auto z-20 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer"
           />
+
         </div>
       </div>
     </section>

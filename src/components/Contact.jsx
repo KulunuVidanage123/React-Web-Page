@@ -15,7 +15,7 @@ function Contact() {
       <img
         src={pieImage}
         alt="Pie icon"
-        className="absolute top-[25%] right-[35%] w-5 sm:w-5 md:w-10 animate-bounce hover:scale-110 transition-transform duration-300"
+        className="absolute top-[15%] sm:top-[25%] right-[35%] w-5 sm:w-5 md:w-10 animate-bounce hover:scale-110 transition-transform duration-300"
       />
 
       {/* Content */}
@@ -34,10 +34,11 @@ function Contact() {
           />
           <button
             type="submit"
-            className="bg-black text-white w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
+            className="bg-black text-white w-full sm:w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
           >
             SUBSCRIBE
           </button>
+
         </form>
       </div>
     </section>

@@ -13,56 +13,55 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-200 py-8 font-poppins lg:py-12">
+    <footer className="bg-white border-t border-gray-200 py-6 sm:py-8 lg:py-12 font-poppins">
       <div className="max-w-[1440px] mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
-          {/* Left: Logo & Info */}
-          <div>
-            <h4 className="text-lg font-bold text-[#00329B] mb-4">LOGO</h4>
-            <p className="text-gray-600 mb-4">
-              Lorem Ipsum is simply dummy text of the <br></br> printing and typesetting industry.
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 text-center md:text-left">
+          {/* Logo & Info */}
+          <div className="mb-2 md:mb-0">
+            <h4 className="text-lg font-bold text-[#00329B] mb-2 font-poppins">LOGO</h4>
+            <p className="text-gray-600 mb-2 font-poppins">
+              Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.
             </p>
-            <p className="text-gray-600">@Lorem</p>
+            <p className="text-gray-600 font-poppins">@Lorem</p>
           </div>
 
-          {/* Center: About Us Links */}
-          <div>
-            <h5 className="font-medium mb-4">About us</h5>
-            <ul className="space-y-2 text-gray-600">
-              <li><a href="#" className="hover:text-blue-600">Lorem</a></li>
-              <li><a href="#" className="hover:text-blue-600">Portfolio</a></li>
-              <li><a href="#" className="hover:text-blue-600">Careers</a></li>
-              <li><a href="#" className="hover:text-blue-600">Contact us</a></li>
+          {/* About Us */}
+          <div className="mb-2 md:mb-0">
+            <h5 className="font-medium mb-2 font-poppins">About us</h5>
+            <ul className="space-y-1 text-gray-600">
+              <li><a href="#" className="hover:text-blue-600 font-poppins">Lorem</a></li>
+              <li><a href="#" className="hover:text-blue-600 font-poppins">Portfolio</a></li>
+              <li><a href="#" className="hover:text-blue-600 font-poppins">Careers</a></li>
+              <li><a href="#" className="hover:text-blue-600 font-poppins">Contact us</a></li>
             </ul>
           </div>
 
-          {/* Right: Contact Info */}
-          <div className="flex flex-col items-start">
-            <div className="ml-12 sm:ml-[-60px] md:ml-[-100px] lg:ml-[-140px] xl:ml-[-180px] transition-all duration-300">
-              <h5 className="font-medium mb-4">Contact us</h5>
-              <p className="text-gray-600 mb-4">
+          {/* Contact Info */}
+          <div className="flex flex-col items-center md:items-start mb-2 md:mb-0">
+            <div className="ml-0 sm:ml-[-60px] md:ml-[-100px] lg:ml-[-140px] xl:ml-[-180px] transition-all duration-300 text-center md:text-left">
+              <h5 className="font-medium mb-2 font-poppins">Contact us</h5>
+              <p className="text-gray-600 mb-2 font-poppins">
                 Lorem Ipsum is simply dummy text <br /> of the printing and typesetting <br /> industry.
               </p>
-              <p className="text-gray-600">+90889097890</p>
+              <p className="text-gray-600 font-poppins">+90889097890</p>
             </div>
           </div>
 
-
         </div>
 
-        {/* Social Icons - Separate Row */}
-        <div className="flex justify-end mt-1 md:-mt-10 -pr-[600px]">
-          <div className="flex items-center gap-1">
+        {/* Social Icons */}
+        <div className="flex justify-center md:justify-end mt-2 md:-mt-10 -pr-0 md:-pr-[600px]">
+          <div className="flex items-center gap-0">
             {socialIcons.map((social, index) => (
               <a
                 key={index}
                 href="#"
-                className="w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
+                className="w-[48px] h-[48px] flex items-center justify-center rounded-full hover:scale-110 transition-transform"
               >
                 <img 
                   src={social.icon} 
                   alt={social.alt} 
-                  className="w-10 h-10 object-contain" 
+                  className="w-[48px] h-[48px] object-contain" 
                 />
               </a>
             ))}
@@ -72,10 +71,15 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="mt-8 pt-4 border-t border-gray-200 text-center text-gray-500 text-sm">
-        Copyright © 2021 Lorem. All rights reserved.
+      <div className="mt-4 sm:mt-8 pt-6 sm:pt-10 border-t border-gray-200 text-center">
+        <p className="text-sm text-gray-600 font-poppins inline-block">
+          Copyright
+          <span className="text-[20px] mx-2 relative -top-0 inline-block">®</span>
+          2021 Lorem All rights Rcerved
+        </p>
       </div>
     </footer>
+
   );
 }
 

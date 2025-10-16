@@ -1,9 +1,10 @@
 import React from 'react';
 import vrImage from '../assets/VRHeadset.png';
 import icon7 from '../assets/icon7.png';
+import happy1 from "../assets/happy1.png";
+import CircleImage from "../components/CircleImage"; 
 
 function Homepage3() {
-
   const contentBlock = {
     img: icon7,
     title: 'Lorem Ipsum is simply dummy text',
@@ -11,22 +12,34 @@ function Homepage3() {
   };
 
   return (
-   
     <section id="homepage3-section" className="py-8 sm:py-12 md:py-16 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-8 sm:px-12 md:px-20 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
-        
-        {/* Left: Text Section */}
-        <div className="flex-1 w-full max-w-2xl space-y-6 md:space-y-8 text-center md:text-left">
-          
-         
+      <div className="max-w-[1440px] mx-auto px-8 sm:px-12 md:px-20 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 relative">
+       
+        <div className="flex-1 w-full max-w-2xl space-y-6 md:space-y-8 text-center md:text-left relative">
+
+          <div className="absolute -left-1 top-21 md:hidden z-20">
+            <CircleImage
+              src={happy1}
+              alt="Happy"
+              bgColor="#9208D3"
+              size={58}
+              imgSize={26}
+            />
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 mb-4">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-500 rounded-full flex items-center justify-center overflow-hidden">
-              <img
-                src={contentBlock.img}
-                alt={contentBlock.title}
-                className="w-full h-full object-cover"
+           
+            <div className="hidden md:flex">
+              <CircleImage
+                src={happy1}
+                alt="Happy"
+                bgColor="#9208D3"
+                size={58}
+                imgSize={26}
+                className="-mt-1"
               />
             </div>
+
             <div>
               <h3 className="font-medium text-gray-900 font-poppins text-sm sm:text-base">
                 {contentBlock.title}
