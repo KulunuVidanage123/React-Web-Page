@@ -9,11 +9,11 @@ function Cards() {
         {/* Card 1 */}
         <div className="relative flex justify-center">
           <div className="relative z-10 bg-gray-50 p-6 sm:p-8 rounded-xl shadow-md w-[572px] h-[459px] flex flex-col justify-center items-center text-center transition-all duration-300 hover:shadow-lg">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
+            <h3 className="text-[25px] sm:text-xl md:text-2xl font-semibold mb-4">
               Lorem Ipsum is simply <br className="hidden sm:block" />
               dummy text.
             </h3><br></br>
-            <p className="text-gray-600 mb-10 text-sm sm:text-base leading-relaxed max-w-[90%] mx-auto">
+            <p className="text-[16px] text-[#545454] mb-10 sm:text-base leading-relaxed max-w-[90%] mx-auto">
               KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
               application and website builders measuring dozens of completed
               projects. We build and develop mobile applications for several top
@@ -34,11 +34,11 @@ function Cards() {
 
           {/* Card content */}
           <div className="relative z-10 bg-[#1090CB] text-white p-6 sm:p-8 rounded-xl shadow-md w-[572px] h-[459px] flex flex-col justify-center items-center text-center transition-all duration-300 hover:shadow-lg">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
+            <h3 className="text-[25px] sm:text-xl md:text-2xl font-semibold mb-4">
               Lorem Ipsum is simply <br className="hidden sm:block" />
               dummy text.
             </h3><br></br>
-            <p className="mb-10 text-sm sm:text-base leading-relaxed max-w-[90%] mx-auto">
+            <p className="mb-10 text-[16px] sm:text-base leading-relaxed max-w-[90%] mx-auto">
               KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
               application and website builders measuring dozens of completed
               projects. We build and develop mobile applications for several top

@@ -20,7 +20,7 @@ function Contact() {
 
       {/* Content */}
       <div className="max-w-3xl mx-auto text-center w-full">
-        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 font-poppins leading-relaxed text-gray-800">
+        <h3 className="text-[30px] sm:text-xl md:text-2xl font-semibold mb-6 font-poppins leading-relaxed text-gray-800">
           Lorem Ipsum is simply dummy <br className="hidden sm:block" />
           text of the printing.
         </h3><br></br>
@@ -34,7 +34,7 @@ function Contact() {
           />
           <button
             type="submit"
-            className="bg-black text-white w-full sm:w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
+            className="bg-black text-[16px] text-white w-full sm:w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
           >
             SUBSCRIBE
           </button>

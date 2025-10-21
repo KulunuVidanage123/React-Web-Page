@@ -20,7 +20,7 @@ function Logos() {
       </div>
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 text-center">
-        <h3 className="text-base sm:text-lg font-medium mb-6 sm:mb-8 font-poppins">
+        <h3 className="text-[24px] sm:text-lg font-medium mb-6 sm:mb-8 font-poppins">
           You will be in good company
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 items-center justify-items-center">

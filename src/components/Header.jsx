@@ -87,7 +87,8 @@ function Header() {
     
       <div className="overflow-x-hidden max-w-full">
         <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-blue-100 w-screen max-w-full overflow-visible">
-          <div className="max-w-[1600px] w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-8 h-16 relative">
+          <div className="max-w-[1600px] w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-12 h-20 relative">
+
             {/* Left: Logo */}
             <div className="text-xl sm:text-2xl font-bold text-[#1090CB] font-poppins xl:ml-100 flex-shrink-0 align-left">
               LOGO

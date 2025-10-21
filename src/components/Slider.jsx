@@ -10,24 +10,29 @@ function Slider() {
       id="slider-section"
       className="min-h-[84vh] bg-gradient-to-br from-[#1090CB1A] to-white py-16 border-b border-gray-200 relative font-poppins"
     >
-      <div className="max-w-[1600px] mx-auto w-full px-6 flex flex-col md:flex-row items-center justify-between gap-8 min-h-[84vh]">
+      <div className="max-w-[1600px] mx-auto w-full px-6 flex flex-col md:flex-col lg:flex-row items-center justify-between gap-8 min-h-[84vh]">
         
         {/* Left: Text Content */}
-        <div className="flex-1 w-full max-w-[1200px] lg:max-w-[1400px] order-2 lg:order-1 text-center md:text-left px-4 md:px-10 lg:ml-20">
-          <h1 className="text-[32px] md:text-[32px] font-bold text-gray-900 mb-16 font-poppins leading-[1.4]">
+        <div
+          className="flex-1 w-full max-w-none text-center lg:text-left px-4 md:px-4 lg:pl-32 lg:pr-0 
+                    order-last md:order-last lg:order-1 
+                    mt-12 md:mt-12 lg:mt-0
+                    xl:mt-0"
+        >
+          <h1 className="text-[40px] md:text-[40px] font-semibold text-gray-900 mb-10 font-poppins leading-[1.4]">
             Experienced <span className="text-[#1090CB]">mobile and web</span>{' '}
             applications and website <br /> builders measuring.
           </h1>
 
-          <p className="text-gray-600 mb-12 font-poppins">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+          <p className="text-[16px] text-[#5C5C5C] mb-8 font-poppins">
+            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web <br></br>
             applications and website builders measuring dozens of completed
-            projects. We build and develop mobile applications for several top
-            platforms, including Android & iOS.
+            projects. <br></br> We build and develop mobile applications for several top
+            platforms, <br></br> including Android & iOS.
           </p>
           <br />
 
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center lg:items-start">
             <button className="bg-[#1090CB] text-white w-[193px] h-[53px] rounded-lg font-medium hover:bg-[#0d7fb5] transition-colors font-poppins">
               Contact us
             </button>
@@ -37,23 +42,25 @@ function Slider() {
           </div>
         </div>
 
+
+
         {/* Right: Image Section */}
         <div className="flex-shrink-0 relative order-1 lg:order-2 flex justify-end w-full md:w-auto -mt-28">
           <div className="relative">
             
-            <div className="absolute top-[15%] right-[10%] w-[450px] h-[450px] rounded-full bg-gradient-to-br from-[#FFF9C4]/60 to-transparent blur-2xl z-[8]" />
+            <div className="absolute top-[15%] right-[10%] w-[400px] h-[400px] rounded-full bg-gradient-to-br from-[#FFF9C4]/60 to-transparent blur-2xl z-[8]" />
               
             <img
               src={developerImg}
               alt="Developer working"
-              className="w-[850px] h-[600px] rounded-xl object-contain relative z-10"
+              className="w-[763px] h-[597px] rounded-xl object-contain relative z-10"
             />
           </div>
         </div>
       </div>
 
       {/* Decorative Figure 1 */}
-      <div className="absolute top-[200px] right-0 z-10 hidden lg:block">
+      <div className="absolute top-[200px] right-0 z-10 hidden xl:block">
         <img
           src={figure1}
           alt="Decorative figure"
@@ -61,12 +68,12 @@ function Slider() {
         />
       </div>
 
-      {/* Decorative Figure 2*/}
-      <div className="absolute left-0 z-10 hidden lg:block
+      {/* Decorative Figure 2 */}
+      <div className="absolute left-0 z-10 hidden xl:block
                   top-[550px]       /* md screens */
                   lg:top-[800px]    /* adjusted for laptop screens like 1920x1080 */
                   xl:top-[520px]    /* slightly lower on larger desktops, but still higher than before */
-                  2xl:top-[85%]   /* very large screens */
+                  2xl:top-[85%]     /* very large screens */
                   ">
         <img
           src={figure2}
@@ -74,6 +81,8 @@ function Slider() {
           className="object-contain"
         />
       </div>
+
+
 
     </section>
   );
