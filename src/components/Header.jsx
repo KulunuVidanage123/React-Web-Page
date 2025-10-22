@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import GlobalStyles from "./GlobalStyles"; 
 
 function Header() {
   const [activeTab, setActiveTab] = useState("home");
@@ -65,35 +66,7 @@ function Header() {
 
   return (
     <>
-      <style>{`
-        html, body {
-          overflow-x: hidden !important;
-          width: 100%;
-        }
-        * {
-          box-sizing: border-box;
-          max-width: 100vw;
-        }
-
-        /* Only apply for normal laptop screens (1024px–1439px) */
-        @media (min-width: 1024px) and (max-width: 1439px) {
-          header .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-
-          header .logo-section {
-            margin-left: 0;
-            text-align: left;
-          }
-
-          header .nav-section {
-            margin-right: 0;
-            text-align: right;
-          }
-        }
-      `}</style>
+      <GlobalStyles />
 
       {isMenuOpen && (
         <div
@@ -111,7 +84,6 @@ function Header() {
               LOGO
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-gray-600 hover:text-[#1090CB] z-[60]"
@@ -139,36 +111,23 @@ function Header() {
                 isMenuOpen ? "flex" : "hidden"
               } md:flex absolute md:relative top-16 md:top-0 left-0 right-0 md:right-auto bg-white md:bg-transparent flex-col md:flex-row items-center gap-4 md:gap-8 py-4 md:py-0 border-b md:border-none shadow-lg md:shadow-none transition-all duration-300 z-[55] w-full md:w-auto max-w-full overflow-visible`}
             >
-              {/* Navigation Links */}
+              {/* Navigation Links with a loop */}
               <nav className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16 w-full md:w-auto items-center justify-center">
-                <a
-                  onClick={() => scrollToSection("slider-section", "home")}
-                  href="#slider-section"
-                  className={getTabClasses("home")}
-                >
-                  Home
-                </a>
-                <a
-                  onClick={() => scrollToSection("iconbar-section", "about")}
-                  href="#iconbar-section"
-                  className={getTabClasses("about")}
-                >
-                  About us
-                </a>
-                <a
-                  onClick={() => scrollToSection("homepage-section", "services")}
-                  href="#homepage-section"
-                  className={getTabClasses("services")}
-                >
-                  Services
-                </a>
-                <a
-                  onClick={() => scrollToSection("cards-section", "blog")}
-                  href="#cards-section"
-                  className={getTabClasses("blog")}
-                >
-                  Blog
-                </a>
+                {[
+                  { id: "slider-section", tab: "home", label: "Home" },
+                  { id: "iconbar-section", tab: "about", label: "About us" },
+                  { id: "homepage-section", tab: "services", label: "Services" },
+                  { id: "cards-section", tab: "blog", label: "Blog" },
+                ].map(({ id, tab, label }) => (
+                  <a
+                    key={tab}
+                    onClick={() => scrollToSection(id, tab)}
+                    href={`#${id}`}
+                    className={getTabClasses(tab)}
+                  >
+                    {label}
+                  </a>
+                ))}
               </nav>
 
               <a

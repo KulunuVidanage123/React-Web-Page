@@ -2,7 +2,8 @@ import React from 'react';
 import facebookIcon from '../assets/facebook.png';
 import InstagramIcon from '../assets/Instagram.png';
 import twitterIcon from '../assets/twitter.png';
-import linkedinIcon from '../assets/linkedin.png'; 
+import linkedinIcon from '../assets/linkedin.png';
+import AboutUsSection from './AboutUsSection'; 
 
 function Footer() {
   const socialIcons = [
@@ -24,17 +25,8 @@ function Footer() {
             </p>
             <p className="text-gray-600 font-poppins">@Lorem</p>
           </div>
-
-          {/* About Us */}
-          <div className="mb-2 md:mb-0 md:text-center lg:text-left">
-            <h5 className="text-[17px] font-mildbold mb-6 font-poppins">About us</h5>
-            <ul className="space-y-1 text-[16px] text-[#515151]">
-              <li><a href="#" className="hover:text-blue-600 font-poppins">Lorem</a></li>
-              <li><a href="#" className="hover:text-blue-600 font-poppins">Portfolio</a></li>
-              <li><a href="#" className="hover:text-blue-600 font-poppins">Careers</a></li>
-              <li><a href="#" className="hover:text-blue-600 font-poppins">Contact us</a></li>
-            </ul>
-          </div>
+          
+          <AboutUsSection />
 
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-end lg:items-start mb-2 md:mb-0 md:pr-6 lg:pr-0">
@@ -48,25 +40,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="hidden lg:flex justify-end mt-2 md:-mt-10">
-          <div className="flex items-center gap-0">
-            {socialIcons.map((social, index) => (
-              <a
-                key={index}
-                href="#"
-                className="w-[48px] h-[48px] flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-              >
-                <img 
-                  src={social.icon} 
-                  alt={social.alt} 
-                  className="w-[48px] h-[48px] object-contain" 
-                />
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <div className="lg:hidden flex justify-center mt-6">
+        {/* Social Icons */}
+        <div className="flex justify-center lg:justify-end mt-6 lg:mt-2 md:-mt-6 lg:-mt-10">
           <div className="flex items-center gap-0">
             {socialIcons.map((social, index) => (
               <a
@@ -85,12 +60,12 @@ function Footer() {
         </div>
       </div>
 
-      
+      {/* Copyright */}
       <div className="mt-4 sm:mt-8 pt-6 sm:pt-10 border-t border-gray-200 text-center">
         <p className="text-sm text-gray-600 font-poppins inline-block">
           Copyright
           <span className="text-[13px] mx-2 relative -top-0 inline-block">®</span>
-          2021 Lorem All rights Rcerved
+          2025 Lorem All rights Rcerved
         </p>
       </div>
     </footer>

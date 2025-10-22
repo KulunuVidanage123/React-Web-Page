@@ -42,8 +42,6 @@ function Slider() {
           </div>
         </div>
 
-
-
         {/* Right: Image Section */}
         <div className="flex-shrink-0 relative order-1 lg:order-2 flex justify-end w-full md:w-auto -mt-28">
           <div className="relative">
@@ -69,20 +67,13 @@ function Slider() {
       </div>
 
       {/* Decorative Figure 2 */}
-      <div className="absolute left-0 z-10 hidden xl:block
-                  top-[550px]       /* md screens */
-                  lg:top-[800px]    /* adjusted for laptop screens like 1920x1080 */
-                  xl:top-[520px]    /* slightly lower on larger desktops, but still higher than before */
-                  2xl:top-[85%]     /* very large screens */
-                  ">
+      <div className="absolute left-0 z-10 hidden xl:block top-[550px] lg:top-[800px] xl:top-[520px] 2xl:top-[85%]">
         <img
           src={figure2}
           alt="Decorative figure"
           className="object-contain"
         />
       </div>
-
-
 
     </section>
   );

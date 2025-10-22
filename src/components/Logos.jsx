@@ -6,6 +6,13 @@ import leotrippi from '../assets/leotrippi.png';
 import yellowicon from '../assets/yellowicon.png'; 
 
 function Logos() {
+  const logos = [
+    { src: beneoshop, alt: "Beneoshop" },
+    { src: caspio, alt: "Caspio" },
+    { src: hypergrid, alt: "HyperGrid" },
+    { src: leotrippi, alt: "Leo Trippi" },
+  ];
+
   return (
     <section className="py-8 sm:py-12 md:py-16 bg-white relative overflow-hidden">
       
@@ -23,28 +30,18 @@ function Logos() {
         <h3 className="text-[24px] sm:text-lg font-medium mb-6 sm:mb-8 font-poppins">
           You will be in good company
         </h3>
+        
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 items-center justify-items-center">
-          <img 
-            src={beneoshop} 
-            alt="Beneoshop" 
-            className="w-[120px] sm:w-[150px] md:w-auto max-h-[150px] object-contain"
-          />
-          <img 
-            src={caspio} 
-            alt="Caspio" 
-            className="w-[120px] sm:w-[150px] md:w-auto max-h-[150px] object-contain"
-          />
-          <img 
-            src={hypergrid} 
-            alt="HyperGrid" 
-            className="w-[120px] sm:w-[150px] md:w-auto max-h-[150px] object-contain"
-          />
-          <img 
-            src={leotrippi} 
-            alt="Leo Trippi" 
-            className="w-[120px] sm:w-[150px] md:w-auto max-h-[150px] object-contain"
-          />
+          {logos.map(({ src, alt }) => (
+            <img 
+              key={alt}
+              src={src}
+              alt={alt}
+              className="w-[120px] sm:w-[150px] md:w-auto max-h-[150px] object-contain"
+            />
+          ))}
         </div>
+
       </div>
     </section>
   );
