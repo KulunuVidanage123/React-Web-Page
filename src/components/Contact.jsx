@@ -15,7 +15,7 @@ function Contact() {
       <img
         src={pieImage}
         alt="Pie icon"
-        className="absolute top-[15%] sm:top-[25%] right-[35%] w-5 sm:w-5 md:w-10 animate-bounce hover:scale-110 transition-transform duration-300"
+        className="absolute top-[8%] sm:top-[25%] right-[35%] w-5 sm:w-5 md:w-10 animate-bounce hover:scale-110 transition-transform duration-300"
       />
 
       {/* Content */}

@@ -22,9 +22,8 @@ function Homepage2() {
 
   return (
     <section id="homepage2-section" className="py-8 sm:py-12 md:py-16 bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-8 sm:px-12 md:px-20 flex flex-col xl:flex-row items-center xl:items-start justify-between gap-8 md:gap-12 relative">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-12 md:px-15 flex flex-col xl:flex-row items-center xl:items-start justify-between lg:justify-center gap-8 md:gap-12 relative">
 
-        {/* ✅ Combined Image + Content Section */}
         <div className="flex flex-col md:flex-col lg:flex-col xl:flex-row items-center xl:items-start justify-center gap-6 md:gap-10 w-full">
           
           {/* Image Section */}
@@ -36,13 +35,12 @@ function Homepage2() {
             />
           </div>
 
-          {/* Content Block */}
           <div className="flex-1 w-full max-w-full md:max-w-2xl flex flex-col items-center xl:items-start text-center xl:text-left space-y-6 md:space-y-8 xl:mt-16">
             
             {/* Circle + Text Section */}
-            <div className="relative flex flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-3 mb-2 sm:mb-3 md:mb-4">
+            <div className="relative flex flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-1 sm:gap-3 mb-2 sm:mb-3 md:mb-4 -ml-2 sm:ml-0">
               
-              <div className="flex">
+              <div className="flex ml-2 sm:ml-0">
                 <CircleImage
                   src={happy1}
                   alt="Happy"
@@ -52,7 +50,6 @@ function Homepage2() {
                 />
               </div>
 
-              {/* ✅ Only this text section is centered in mobile view */}
               <div className="flex flex-col items-center sm:items-start justify-center text-center sm:text-left">
                 <h3 className="font-medium text-gray-900 font-poppins text-sm sm:text-base">
                   {contentBlock.title}

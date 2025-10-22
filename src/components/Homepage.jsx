@@ -7,28 +7,36 @@ import CircleImage from "../components/CircleImage";
 function Homepage() {
     const contentBlock = {
     img: icon5,
-    title: <span className="text-[17px] font-mildbold text-gray-900">{'Lorem Ipsum is simply dummy text'}</span>,
-    desc: <span className="text-[14px] text-[#868686]">{'Lorem Ipsum is simply dummy text'}</span>,
+    title: (
+      <span className="text-[17px] font-mildbold text-gray-900 whitespace-nowrap overflow-ellipsis">
+        {'Lorem Ipsum is simply dummy text'}
+      </span>
+    ),
+    desc: (
+      <span className="text-[14px] text-[#868686]">
+        {'Lorem Ipsum is simply dummy text'}
+      </span>
+    ),
   };
 
   return (
     <section
       id="homepage-section"
-      className="py-8 sm:py-12 md:py-16 bg-white overflow-hidden"
+      className="py-8 sm:py-12 md:py-16 pt-0 sm:pt-0 md:pt-16 bg-white overflow-hidden"
     >
-      <div className="max-w-[1440px] mx-auto px-8 sm:px-12 md:px-20 flex flex-col items-center xl:flex-row xl:items-start gap-8 md:gap-12">
-
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-5 md:px-15 flex flex-col items-center lg:items-center xl:flex-row xl:items-start gap-8 md:gap-12">
+  
         {/* Smartphone Image */}
         <div className="flex-shrink-0 w-full xl:w-auto flex justify-center mb-6 xl:mb-0 order-first xl:order-last">
           <img
             src={smartphoneImage}
             alt="Smartphone mockup"
-            className="w-[703px] h-[537px] rounded-xl object-contain"
+            className="w-full max-w-[350px] sm:max-w-[650px] md:w-[700px] h-auto md:h-[500px] rounded-xl object-contain"
           />
         </div>
 
-        {/* Content Block */}
-        <div className="flex-1 w-full max-w-full md:max-w-2xl space-y-6 md:space-y-8 text-center xl:text-left flex flex-col items-center xl:items-start xl:mt-32">
+        <div className="flex-1 w-full max-w-full md:max-w-2xl space-y-6 md:space-y-8 text-center xl:text-left flex flex-col items-center xl:items-start xl:mt-32 lg:ml-8">
+
 
           {/* Circle + Text Section */}
           <div className="relative flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 mb-4 ml-16 sm:ml-0">

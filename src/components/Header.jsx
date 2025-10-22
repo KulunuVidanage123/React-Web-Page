@@ -65,7 +65,6 @@ function Header() {
 
   return (
     <>
-      
       <style>{`
         html, body {
           overflow-x: hidden !important;
@@ -74,6 +73,25 @@ function Header() {
         * {
           box-sizing: border-box;
           max-width: 100vw;
+        }
+
+        /* Only apply for normal laptop screens (1024px–1439px) */
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          header .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          header .logo-section {
+            margin-left: 0;
+            text-align: left;
+          }
+
+          header .nav-section {
+            margin-right: 0;
+            text-align: right;
+          }
         }
       `}</style>
 
@@ -84,13 +102,12 @@ function Header() {
         ></div>
       )}
 
-    
       <div className="overflow-x-hidden max-w-full">
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-blue-100 w-screen max-w-full overflow-visible">
-          <div className="max-w-[1600px] w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-12 h-20 relative">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-blue-100 w-full overflow-visible">
+          <div className="header-container max-w-[1600px] w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-12 h-20 relative">
 
-            {/* Left: Logo */}
-            <div className="text-xl sm:text-2xl font-bold text-[#1090CB] font-poppins xl:ml-100 flex-shrink-0 align-left">
+            {/* Logo */}
+            <div className="logo-section text-xl sm:text-2xl font-bold text-[#1090CB] font-poppins xl:ml-100 flex-shrink-0">
               LOGO
             </div>
 
@@ -118,7 +135,7 @@ function Header() {
 
             {/* Navigation Menu */}
             <div
-              className={`${
+              className={`nav-section ${
                 isMenuOpen ? "flex" : "hidden"
               } md:flex absolute md:relative top-16 md:top-0 left-0 right-0 md:right-auto bg-white md:bg-transparent flex-col md:flex-row items-center gap-4 md:gap-8 py-4 md:py-0 border-b md:border-none shadow-lg md:shadow-none transition-all duration-300 z-[55] w-full md:w-auto max-w-full overflow-visible`}
             >
@@ -160,9 +177,6 @@ function Header() {
               >
                 Contact us
               </a>
-
-
-
             </div>
           </div>
         </header>

@@ -17,7 +17,7 @@ function Footer() {
       <div className="max-w-[1440px] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 text-center md:text-left">
           {/* Logo & Info */}
-          <div className="mb-2 md:mb-0">
+          <div className="mb-2 md:mb-0 md:pl-6 lg:pl-0">
             <h4 className="text-lg font-bold text-[#00329B] mb-6 font-poppins">LOGO</h4>
             <p className="text-[16px] text-[#515151] mb-2 font-poppins">
               Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.
@@ -26,7 +26,7 @@ function Footer() {
           </div>
 
           {/* About Us */}
-          <div className="mb-2 md:mb-0">
+          <div className="mb-2 md:mb-0 md:text-center lg:text-left">
             <h5 className="text-[17px] font-mildbold mb-6 font-poppins">About us</h5>
             <ul className="space-y-1 text-[16px] text-[#515151]">
               <li><a href="#" className="hover:text-blue-600 font-poppins">Lorem</a></li>
@@ -37,8 +37,8 @@ function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center md:items-start mb-2 md:mb-0">
-            <div className="ml-0 sm:ml-[-60px] md:ml-[-100px] lg:ml-[-140px] xl:ml-[-180px] transition-all duration-300 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-end lg:items-start mb-2 md:mb-0 md:pr-6 lg:pr-0">
+            <div className="ml-0 md:ml-0 lg:ml-[-140px] xl:ml-[-180px] transition-all duration-300 text-center md:text-right lg:text-left">
               <h5 className="text-[17px] font-mildbold mb-6 font-poppins">Contact us</h5>
               <p className="text-[16px] text-[#515151] mb-2 font-poppins">
                 Lorem Ipsum is simply dummy text <br /> of the printing and typesetting <br /> industry.
@@ -46,11 +46,9 @@ function Footer() {
               <p className="text-[16px] text-[#515151] font-poppins">+90889097890</p>
             </div>
           </div>
-
         </div>
 
-        {/* Social Icons */}
-        <div className="flex justify-center md:justify-end mt-2 md:-mt-10 -pr-0 md:-pr-[600px]">
+        <div className="hidden lg:flex justify-end mt-2 md:-mt-10">
           <div className="flex items-center gap-0">
             {socialIcons.map((social, index) => (
               <a
@@ -68,9 +66,26 @@ function Footer() {
           </div>
         </div>
 
+        <div className="lg:hidden flex justify-center mt-6">
+          <div className="flex items-center gap-0">
+            {socialIcons.map((social, index) => (
+              <a
+                key={index}
+                href="#"
+                className="w-[48px] h-[48px] flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+              >
+                <img 
+                  src={social.icon} 
+                  alt={social.alt} 
+                  className="w-[48px] h-[48px] object-contain" 
+                />
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Copyright */}
+      
       <div className="mt-4 sm:mt-8 pt-6 sm:pt-10 border-t border-gray-200 text-center">
         <p className="text-sm text-gray-600 font-poppins inline-block">
           Copyright
@@ -79,7 +94,6 @@ function Footer() {
         </p>
       </div>
     </footer>
-
   );
 }
 
