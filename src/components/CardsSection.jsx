@@ -50,7 +50,7 @@ function Card({
           transition-all font-poppins mx-auto 
           mt-4 lg:mt-0
           ${isPink ? 'bg-white text-[#1090CB]' : 'bg-[#1090CB] text-white'}`}
-          /* ⬆ Reduced lg:mt from 8 → 2 to tighten gap on large screens only */
+          
         >
           View More
         </button>
