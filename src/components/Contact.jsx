@@ -30,11 +30,12 @@ function Contact() {
           <input
             type="email"
             placeholder="        Enter your email"
-            className="w-full sm:flex-1 w-[532px] h-[67px] border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm sm:text-base font-poppins placeholder:text-gray-400"
+            className="w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl h-16 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm sm:text-base font-poppins placeholder:text-gray-400"
           />
+
           <button
             type="submit"
-            className="bg-black text-[16px] text-white w-full sm:w-[173px] h-[67px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
+            className="bg-black text-[16px] text-white w-full sm:w-[183px] h-[62px] rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm sm:text-base font-poppins"
           >
             SUBSCRIBE
           </button>
