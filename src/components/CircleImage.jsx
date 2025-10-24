@@ -1,13 +1,17 @@
 import React from "react";
+import happy1 from "../assets/happy1.png";
 
 const CircleImage = ({
-  src,
-  alt,
+  index,
   bgColor = "#08D3BB",
   size = 58,
   imgSize = 26,
-  className = "", 
 }) => {
+  const className =
+    index === 0
+      ? "sm:relative absolute -left-16 -top-2 sm:top-auto sm:left-auto"
+      : "";
+
   return (
     <div
       className={`rounded-full flex items-center justify-center overflow-hidden ${className}`}
@@ -18,8 +22,8 @@ const CircleImage = ({
       }}
     >
       <img
-        src={src}
-        alt={alt}
+        src={happy1}
+        alt="Happy"
         className="object-contain"
         style={{
           width: `${imgSize}px`,

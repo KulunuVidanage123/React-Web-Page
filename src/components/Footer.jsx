@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center lg:justify-end mt-6 lg:mt-2 md:-mt-6 lg:-mt-10">
+        <div className="flex justify-center lg:justify-end mt-6 lg:mt-2 md:-mt-6 lg:-mt-11">
           <div className="flex items-center gap-0">
             {socialIcons.map((social, index) => (
               <a
