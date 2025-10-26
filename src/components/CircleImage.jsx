@@ -1,30 +1,75 @@
 import React from "react";
 import happy1 from "../assets/happy1.png";
+import smartphoneImage from "../assets/smartphone.png";
+import stacksImage from "../assets/stacks.png";
+import vrImage from "../assets/VRHeadset.png";
 
-const CircleImage = ({
-  index,
-  bgColor = "#08D3BB",
-  size = 58,
-  imgSize = 26,
-}) => {
-  const className =
-    index === 0
-      ? "sm:relative absolute -left-16 -top-2 sm:top-auto sm:left-auto"
-      : "";
+export const sectionInfo = [
+  {
+    id: "homepage-section",
+    image: smartphoneImage,
+    imagePosition: "right",
+    bgColor: "#08D3BB",
+    marginTop: "xl:mt-32 lg:ml-8",
+  },
+  {
+    id: "homepage2-section",
+    image: stacksImage,
+    imagePosition: "left",
+    bgColor: "#1090CB",
+    marginTop: "xl:mt-16",
+  },
+  {
+    id: "homepage3-section",
+    image: vrImage,
+    imagePosition: "right",
+    bgColor: "#9208D3",
+    marginTop: "xl:mt-32",
+  },
+];
+
+const CircleImage = ({ index, size = 58, imgSize = 26 }) => {
+  const images = [happy1, happy1, happy1];
+  const bgColors = ["#08D3BB", "#1090CB", "#9208D3"];
+  const bgColor = bgColors[index] || "#08D3BB";
+
+  const positions = [
+    {
+      mobile: "relative", // on mobile
+      desktop: "relative sm:static", // in larger screens
+    },
+    {
+      mobile: "relative",
+      desktop: "relative sm:static",
+    },
+    {
+      mobile: "relative",
+      desktop: "relative sm:static",
+    },
+  ];
+
+  const positionClasses = positions[index]
+    ? `${positions[index].mobile} sm:${positions[index].desktop}`
+    : "relative sm:static";
+
+  const baseClass =
+    "rounded-full flex items-center justify-center overflow-hidden z-10";
+  const className = `${baseClass} ${positionClasses}`;
 
   return (
     <div
-      className={`rounded-full flex items-center justify-center overflow-hidden ${className}`}
+      className={className}
       style={{
         backgroundColor: bgColor,
         width: `${size}px`,
         height: `${size}px`,
+        position: "relative",
       }}
     >
       <img
-        src={happy1}
-        alt="Happy"
-        className="object-contain"
+        src={images[index] || happy1}
+        alt={`circle-${index}`}
+        className="object-contain sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2"
         style={{
           width: `${imgSize}px`,
           height: `${imgSize}px`,
