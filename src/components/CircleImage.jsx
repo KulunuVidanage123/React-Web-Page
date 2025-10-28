@@ -4,6 +4,9 @@ import smartphoneImage from "../assets/smartphone.png";
 import stacksImage from "../assets/stacks.png";
 import vrImage from "../assets/VRHeadset.png";
 
+export const titleBase = "text-[17px] font-mildbold text-gray-900 whitespace-nowrap";
+export const descBase = "text-[14px] text-[#868686]";
+
 export const sectionInfo = [
   {
     id: "homepage-section",
@@ -34,18 +37,9 @@ const CircleImage = ({ index, size = 58, imgSize = 26 }) => {
   const bgColor = bgColors[index] || "#08D3BB";
 
   const positions = [
-    {
-      mobile: "relative", // on mobile
-      desktop: "relative sm:static", // in larger screens
-    },
-    {
-      mobile: "relative",
-      desktop: "relative sm:static",
-    },
-    {
-      mobile: "relative",
-      desktop: "relative sm:static",
-    },
+    { mobile: "relative", desktop: "relative sm:static" },
+    { mobile: "relative", desktop: "relative sm:static" },
+    { mobile: "relative", desktop: "relative sm:static" },
   ];
 
   const positionClasses = positions[index]
